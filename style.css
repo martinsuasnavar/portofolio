@@ -3,7 +3,7 @@
 /*////*/
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 /*//*/
 
 :root{
-    --footer-height: 19px;
+    --footer-height: 100px;
 }
 
 /*//*/
@@ -50,7 +50,10 @@
     /*column*/
     flex-direction: column; /*display children ina column*/
 
-    background-image: url("voltage-background.png");*/
+    background-image: url("voltage-background.png");
+    background-repeat: no-repeat; /*prevent background from looping itself*/
+    background-size: cover; /*adjust the size of the background image*/
+    background-position: bottom;
 }
 
 #facade h1,
@@ -59,12 +62,12 @@
 }
 
 /*mobile phone view*/
-@media (max-width: 500px){
+/*@media (max-width: 500px){
     #facade{
         color: red;
         font-size: 3rem;
     }
-}
+}*/
 
 /*//*/
 /*end facade section*/
@@ -84,22 +87,35 @@
 /*classes*/
 /*///////*/
 
+.navigator{
+    color: white;
+    align-content: right;
+    align-items: right;
+    text-align: right;
+    margin: 9px;
+}
+
 .article{
     /*space between articles*/
     margin-top: 0px; 
     margin-bottom: 0px; 
 }
 
+.facade-text{
+    margin-top: 10px;
+}
+
+.facade-button{
+    margin-top: 190px;
+}
+
+.footer-text{
+    margin: 90px;
+}
+
 /*////////*/
 /*elements*/
 /*////////*/
-
-nav{
-    color: white;
-    align-content: left;
-    align-items: left;
-    text-align: left;
-}
 
 html, body{
     min-height: 100vh;
@@ -112,5 +128,11 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: green;
+    min-height: var(--footer-height);
+    color: white;
+    background: rgb(27, 23, 23);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: down;
 }
