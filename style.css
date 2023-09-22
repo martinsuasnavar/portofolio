@@ -1,19 +1,28 @@
+/*////*/
+/*CSS/*/
+/*////*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
-    /*background-image: "voltage-background.png";/*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 } /*define the entire document attributes*/
 
 
+/*//*/
+/*start variables section*/
+/*//*/
 
-/*////////*/
-/*elements*/
-/*////////*/
-
-html{
-    background: black;
-    min-height: 100%;
-    margin: 0%;
+:root{
+    --footer-height: 19px;
 }
+
+/*//*/
+/*end variables section*/
+/*//*/
+
+
 
 
 
@@ -21,19 +30,87 @@ html{
 /*identifiers*/
 /*///////////*/
 
-body{
-    min-height: 100%;
-    margin: 0;
-}
+/*//*/
+/*start facade section*/
+/*//*/
 
 #facade{
     background: purple;
     color: white;
-    background-image: "voltage-background.png";
+    min-height: 100vh; /*box height*/
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1rem;
+
+    /*center text horizontally and vertically*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*column*/
+    flex-direction: column; /*display children ina column*/
+
+    background-image: url("voltage-background.png");*/
 }
 
+#facade h1,
+#facade h2{
+    max-width: 100%;
+}
+
+/*mobile phone view*/
+@media (max-width: 500px){
+    #facade{
+        color: red;
+        font-size: 3rem;
+    }
+}
+
+/*//*/
+/*end facade section*/
+/*//*/
+
+
+
 #contents{
+    min-height: calc(150vh - var(--footer-height)); /*box height minus footer height*/
     background: #2e2b2b;
     color: white;
+    padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
     
+}
+
+/*///////*/
+/*classes*/
+/*///////*/
+
+.article{
+    /*space between articles*/
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+}
+
+/*////////*/
+/*elements*/
+/*////////*/
+
+nav{
+    color: white;
+    align-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+html, body{
+    min-height: 100vh;
+    position: relative;
+    background: black;
+}
+
+footer{
+    /*footer height = var(--footer-height)*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: green;
 }
