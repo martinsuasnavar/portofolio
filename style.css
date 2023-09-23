@@ -3,8 +3,7 @@
 /*////*/
 
 *{
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     box-sizing: border-box;
 } /*define the entire document attributes*/
@@ -77,10 +76,11 @@
 
 #contents{
     min-height: calc(150vh - var(--footer-height)); /*box height minus footer height*/
-    background: #2e2b2b;
-    color: white;
+    background: #cdcde7;
+    color: rgb(38, 44, 41);
     padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
-    
+    flex: 1; /*this makes the area expand to fill available space*/
+
 }
 
 /*///////*/
@@ -95,10 +95,30 @@
     margin: 9px;
 }
 
+.navigator-button{
+    padding: 10px;
+    background: rgb(32, 27, 31);
+}
+
+.big-title-text{
+    padding: 40px;
+    font-size: 4rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-text{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .article{
     /*space between articles*/
     margin-top: 0px; 
-    margin-bottom: 0px; 
+    margin-bottom: 40px;
+    padding: 19px;
 }
 
 .facade-text{
@@ -113,6 +133,13 @@
     margin: 90px;
 }
 
+.cv-download-button{
+    margin-top: 40px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /*////////*/
 /*elements*/
 /*////////*/
@@ -125,8 +152,9 @@ html, body{
 
 footer{
     /*footer height = var(--footer-height)*/
-    position: absolute;
-    bottom: 0;
+    /*position: flex; /*absolute position leaves the box in a fixed postion, which can cause overlapping issues with the contents box*/
+    /*bottom: 0;*/
+    display: flex;
     width: 100%;
     min-height: var(--footer-height);
     color: white;
@@ -134,5 +162,5 @@ footer{
     align-content: center;
     align-items: center;
     text-align: center;
-    justify-content: down;
+    justify-content: center;
 }
