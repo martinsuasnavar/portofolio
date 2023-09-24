@@ -83,6 +83,10 @@
     padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
     flex: 1; /*this makes the area expand to fill available space*/
     text-align: center;
+    background: url("content-background-light.png");
+    background-repeat: no-repeat; /*prevent background from looping itself*/
+    background-size: cover; /*adjust the size of the background image*/
+    background-position: bottom;
 }
 
 /*///////*/
@@ -104,6 +108,10 @@
     background: url("content-background.png")
 }
 
+.navigator-button:hover{
+    color:rgb(205, 240, 240);
+}
+
 .facade-button{
     padding: 10px;
     background: url("content-background-transparent.png");
@@ -111,6 +119,8 @@
     background-size: cover; /*adjust the size of the background image*/
     background-position: bottom;
     opacity: 100%;
+    text-decoration: none;
+    border-radius: 1rem;
 }
 
 
@@ -136,8 +146,11 @@
     margin-top: 10px;
     width: 100px;
     height: auto;
-    filter: grayscale();
+    
+    border-radius: 0.25rem;
 }
+
+
 
 .article{
     /*space between articles*/
@@ -162,16 +175,23 @@
     margin: 90px;
 }
 
-.cv-download-button{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.contents-button{
+    margin-top: 10px;
+    margin-bottom: 5px;
     padding: 10px;
+    color: black;
     display: inline-block;
     align-content: center;
     align-items: center;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
     background-image: url("content-background-transparent.png");
+    border-radius: 0.5rem;
+}
+
+.contents-button:hover{
+    color: rgb(72, 28, 102);  
 }
 
 /*////////*/
@@ -182,6 +202,10 @@ html, body{
     min-height: 100vh;
     position: relative;
     background: black;
+}
+
+cv{
+    filter: grayscale();
 }
 
 footer{
