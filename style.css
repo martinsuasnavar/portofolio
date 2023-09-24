@@ -34,7 +34,7 @@
 /*//*/
 
 #facade{
-    background: purple;
+    background: black;
     color: white;
     min-height: 100vh; /*box height*/
     margin-top: 10px;
@@ -53,9 +53,18 @@
     background-repeat: no-repeat; /*prevent background from looping itself*/
     background-size: cover; /*adjust the size of the background image*/
     background-position: bottom;
+    opacity: 0;
+    animation: facadeFadeIn 0.2s;
 }
 
-
+@keyframes facadeFadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 #facade h1,
 #facade h2{
@@ -114,6 +123,22 @@
     color:rgb(205, 240, 240);
 }
 
+.facade-item{
+    opacity: 0;
+    animation: moveFromLeft 1s ease-in-out 0.2s;
+}
+
+@keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%); /* Start off-screen to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to the center */
+    }
+}
+
 .facade-button{
     padding: 10px;
     background: url("content-background-transparent.png");
@@ -124,17 +149,26 @@
     text-decoration: none;
     border-radius: 1rem;
     color: white;
+    opacity: 0;
+    animation: moveFromRight 1s ease-in-out 0.2s;
+}
+
+
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20%); /* Start off-screen to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to the center */
+    }
 }
 
 .facade-button:hover{
     color:rgb(205, 240, 240);
 }
 
-
-.facade-button-text{
-
-    opacity: 200%;
-}
 
 .big-title-text{
     padding: 40px;
