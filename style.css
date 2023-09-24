@@ -97,7 +97,9 @@
 
 .navigator-button{
     padding: 10px;
-    background: rgb(32, 27, 31);
+    margin-left: 20px;
+    font-size: 0.75rem;
+    background: url("content-background.png")
 }
 
 .big-title-text{
@@ -163,4 +165,9 @@ footer{
     align-items: center;
     text-align: center;
     justify-content: center;
+    background: url("content-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+   
 }
