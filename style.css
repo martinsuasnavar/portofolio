@@ -105,7 +105,9 @@
     padding: 10px;
     margin-left: 20px;
     font-size: 0.75rem;
-    background: url("content-background.png")
+    background: url("content-background.png");
+    color: white;
+    text-decoration: none;
 }
 
 .navigator-button:hover{
@@ -121,8 +123,12 @@
     opacity: 100%;
     text-decoration: none;
     border-radius: 1rem;
+    color: white;
 }
 
+.facade-button:hover{
+    color:rgb(205, 240, 240);
+}
 
 
 .facade-button-text{
