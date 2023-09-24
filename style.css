@@ -77,7 +77,7 @@
 
 
 #contents{
-    min-height: calc(150vh - var(--footer-height)); /*box height minus footer height*/
+    min-height: calc(90vh - var(--footer-height)); /*box height minus footer height*/
     background: #cdcde7;
     color: rgb(38, 44, 41);
     padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
@@ -133,6 +133,7 @@
 }
 
 .article-image{
+    margin-top: 10px;
     width: 100px;
     height: auto;
     filter: grayscale();
