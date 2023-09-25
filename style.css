@@ -43,7 +43,7 @@
 
     /*center text horizontally and vertically*/
     text-align: center;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     /*column*/
@@ -139,7 +139,12 @@
     }
 }
 
+
 .facade-button{
+    
+    padding: 90px 100px;
+    width: 90px;
+    display: inline-block;
     padding: 10px;
     background: url("content-background-transparent.png");
     background-repeat: no-repeat; /*prevent background from looping itself*/
@@ -147,10 +152,18 @@
     background-position: bottom;
     opacity: 100%;
     text-decoration: none;
-    border-radius: 1rem;
+    border-radius: 4rem;
     color: white;
     opacity: 0;
     animation: moveFromRight 1s ease-in-out 0.2s;
+}
+
+@media(max-width: 500px){
+    .facade-button{
+        width: 290px;
+        font-size: 4rem;
+        color: white;
+    }
 }
 
 
