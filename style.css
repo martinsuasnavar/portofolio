@@ -119,6 +119,14 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 1000px){
+    .navigator-button{
+        width: 220px;
+        font-size: 2rem;
+        color: white;
+    }
+}
+
 .navigator-button:hover{
     color:rgb(205, 240, 240);
 }
@@ -140,7 +148,7 @@
 }
 
 
-.facade-button{
+.facade-button{ 
     
     padding: 90px 100px;
     width: 90px;
@@ -157,14 +165,18 @@
     opacity: 0;
     animation: moveFromRight 1s ease-in-out 0.2s;
 }
-
-@media(max-width: 500px){
+ 
+@media screen and (max-width: 1000px){
     .facade-button{
-        width: 290px;
-        font-size: 4rem;
+        width: 220px;
+        font-size: 2.5rem;
         color: white;
     }
 }
+
+
+
+
 
 
 @keyframes moveFromRight {
