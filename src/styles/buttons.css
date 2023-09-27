@@ -1,0 +1,90 @@
+/*FACADE*/
+
+/* !!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!! */
+/* animations are handled in public/style.css  */
+/* !!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!! */
+
+
+.navigator-button{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 0.75rem;
+    background: url("../../public/images/content-background.png");
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .navigator-button{
+        width: 220px;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+.navigator-button:hover{
+    color:rgb(205, 240, 240);
+}
+
+.facade-button{ 
+    
+    padding: 90px 100px;
+    width: 90px;
+    display: inline-block;
+    padding: 10px;
+    background: url("../../public/images/content-background-transparent.png");
+    background-repeat: no-repeat; /*prevent background from looping itself*/
+    background-size: cover; /*adjust the size of the background image*/
+    background-position: bottom;
+    opacity: 100%;
+    text-decoration: none;
+    border-radius: 4rem;
+    color: white;
+}
+
+.facade-button{
+    margin-top: 190px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .facade-button{
+        width: 220px;
+        font-size: 2rem;
+        color: white;
+    }
+}
+
+.facade-button:hover{
+    color:rgb(205, 240, 240);
+}
+
+/*CONTENTS*/
+
+.contents-button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: black;
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(143, 191, 220);
+    /*background-image: url("./assets/content-background-transparent.png");*/
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1000px){
+    .contents-button{
+        width: 220px;
+        font-size: 1.5rem;
+    }
+}
+
+.contents-button:hover{
+    color: rgb(72, 28, 102);  
+}
+

@@ -1,0 +1,10 @@
+/* Style the container to use flexbox */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Add space between the buttons */
+}
+
+/* Style for each button (you can customize as needed) */
+.button-container button {
+  margin-right: 10px; /* Add some space between the buttons */
+}

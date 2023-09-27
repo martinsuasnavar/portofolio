@@ -5,6 +5,7 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 } /*define the entire document attributes*/
 
@@ -55,7 +56,7 @@
     /*column*/
     flex-direction: column; /*display children ina column*/
 
-    background-image: url("voltage-background.png");
+    background-image: url("images/voltage-background.png");
     background-repeat: no-repeat; /*prevent background from looping itself*/
     background-size: cover; /*adjust the size of the background image*/
     background-position: bottom;
@@ -92,7 +93,7 @@
     padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
     flex: 1; /*this makes the area expand to fill available space*/
     text-align: center;
-    background: url("content-background-light.png");
+    background: url("images/content-background-light.png");
     background-repeat: no-repeat; /*prevent background from looping itself*/
     background-size: cover; /*adjust the size of the background image*/
     background-position: bottom;
@@ -102,40 +103,31 @@
 /*classes*/
 /*///////*/
 
-.navigator{
-    color: white;
-    align-content: right;
-    align-items: right;
-    text-align: right;
-    margin: 9px;
+
+
+
+
+
+#facade-about-me-button-placeholder{
+    opacity: 0;
+    animation: facadeButtonFadeIn 1s ease-in-out 0.2s;
 }
 
-.navigator-button{
-    padding: 10px;
-    margin-left: 20px;
-    font-size: 0.75rem;
-    background: url("content-background.png");
-    color: white;
-    text-decoration: none;
-}
-
-
-@media screen and (max-width: 1000px){
-    .navigator-button{
-        width: 220px;
-        font-size: 1.5rem;
-        color: white;
+@keyframes facadeButtonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(20%); /* Start off-screen to the left */
     }
-}
-
-.navigator-button:hover{
-    color:rgb(205, 240, 240);
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move to the center */
+    }
 }
 
 .facade-item{
     margin-top: 140px;
     opacity: 0;
-    animation: moveFromLeft 1s ease-in-out 0.2s;
+    animation: facadeItemFadeIn 1s ease-in-out 0.2s;
 }
 
 
@@ -145,7 +137,7 @@
     }
 }
 
-@keyframes moveFromLeft {
+@keyframes facadeItemFadeIn {
     0% {
         opacity: 0;
         transform: translateX(-20%); /* Start off-screen to the left */
@@ -157,52 +149,13 @@
 }
 
 
-.facade-button{ 
-    
-    padding: 90px 100px;
-    width: 90px;
-    display: inline-block;
-    padding: 10px;
-    background: url("content-background-transparent.png");
-    background-repeat: no-repeat; /*prevent background from looping itself*/
-    background-size: cover; /*adjust the size of the background image*/
-    background-position: bottom;
-    opacity: 100%;
-    text-decoration: none;
-    border-radius: 4rem;
-    color: white;
-    opacity: 0;
-    animation: moveFromRight 1s ease-in-out 0.2s;
-}
- 
-
-
-@media screen and (max-width: 1000px){
-    .facade-button{
-        width: 220px;
-        font-size: 2rem;
-        color: white;
-    }
-}
 
 
 
 
 
-@keyframes moveFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(20%); /* Start off-screen to the left */
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0); /* Move to the center */
-    }
-}
 
-.facade-button:hover{
-    color:rgb(205, 240, 240);
-}
+
 
 
 .big-title-text{
@@ -240,52 +193,35 @@
     text-align: left;
 }
 
+/* style the container to use flexbox */
+.cv-buttons {
+    display: flex;
+    justify-content: center;
+}
 
+.cv-buttons a {
+    margin: 0 10px; /* adjust the margin to control the spacing */
+}
 
 .facade-text{
     margin-top: 10px;
 }
 
-.facade-button{
-    margin-top: 190px;
-}
 
 .footer-text{
     margin: 90px;
 }
 
-.contents-button{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 10px;
-    color: black;
-    display: inline-block;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    background-image: url("content-background-transparent.png");
-    border-radius: 0.5rem;
-}
 
 
-@media screen and (max-width: 1000px){
-    .contents-button{
-        width: 220px;
-        font-size: 1.5rem;
-    }
-}
-
-.contents-button:hover{
-    color: rgb(72, 28, 102);  
-}
 
 /*////////*/
 /*elements*/
 /*////////*/
 
 html, body{
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     position: relative;
     background: black;
@@ -308,7 +244,7 @@ footer{
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: url("content-background.png");
+    background: url("images/content-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
