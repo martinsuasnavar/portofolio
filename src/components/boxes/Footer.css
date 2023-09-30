@@ -1,0 +1,24 @@
+footer{
+    /*footer height = var(--footer-height)*/
+    /*position: flex; /*absolute position leaves the box in a fixed postion, which can cause overlapping issues with the contents box*/
+    /*bottom: 0;*/
+    display: flex;
+    width: 100%;
+    min-height: 19px;
+    color: white;
+    background: rgb(27, 23, 23);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../../../public/images/content-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+   
+}
+
+.footer-text{
+    background-image: none;
+    margin: 90px;
+}

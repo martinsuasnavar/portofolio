@@ -3,11 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; //React Router library, necessarty to navigate between pages in React UI
 
-//WARNING: React Router 6 (the current version being used here) uses <Routes> instead of <Switch>
-//<Switch> has been DEPRECATED
-//
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

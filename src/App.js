@@ -1,32 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';
-import LinkedinButton from './components/containers/linkedinbutton';
-import Cvdownloadbutton from './components/containers/cvdownloadbutton';
-import FacadeAboutMeButton from './components/containers/facadeaboutmebutton';
-import NavigationBar from './components/containers/navigationbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; //React Router library, necessarty to navigate between pages in React UI
+import {  BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AnimationProvider } from './AnimationContext';
+import Home from './pages/Home';
+import Works from './pages/Works';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
+import NavigationBar from './components/containers/NavigationBar';
 
-//WARNING: React Router 6 (the current version being used here) uses <Routes> instead of <Switch>
-//<Switch> has been DEPRECATED
-//The Router is defined right here in App.js
+//IMPORTANT: make sure react-router-dom has been installed in node-modules folder, or else a runtime error is going to be cause since the library is not found
 
 const App = () => {
-  // Find the placeholder element by its ID
-  const navigationBarPlaceholder = document.getElementById('navigation-bar-placeholder')
-  const facadeAboutMeButtonPlaceholder = document.getElementById('facade-about-me-button-placeholder')
-  const linkedinButtonPlaceholder = document.getElementById('linkedin-button-placeholder');
-  const cvButtonPlaceholder = document.getElementById('cv-button-placeholder');
-
-  // Render buttons components into their placeholders
-  ReactDOM.render(<NavigationBar />, navigationBarPlaceholder);
-  ReactDOM.render(<FacadeAboutMeButton />, facadeAboutMeButtonPlaceholder);
-  ReactDOM.render(<LinkedinButton />, linkedinButtonPlaceholder);
-  ReactDOM.render(<Cvdownloadbutton />, cvButtonPlaceholder);
   return (
-    <div>
-    {/* Your other React components */}
-  </div>
+    <AnimationProvider>
+      <BrowserRouter>
+      <NavigationBar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </AnimationProvider>
   );
 };
 

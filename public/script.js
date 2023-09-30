@@ -12,6 +12,7 @@
 //BUTTONS//
 ///////////
 
+
 //selecting buttons
 const myNavigatorButtons = document.getElementsByClassName("navigator-button");
 
