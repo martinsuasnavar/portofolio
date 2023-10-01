@@ -1,35 +1,9 @@
 /*FACADE*/
 
-/* !!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!! */
-/* animations are handled in public/style.css  */
-/* !!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!! */
-
-
-.navigator-button{
-    padding: 10px;
-    margin-left: 20px;
-    font-size: 0.75rem;
-    background: url("../../public/images/content-background.png");
-    color: white;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 1000px){
-    .navigator-button{
-        width: 220px;
-        font-size: 1.5rem;
-        color: white;
-    }
-}
-
-.navigator-button:hover{
-    color:rgb(205, 240, 240);
-}
-
 .facade-button{ 
     
     padding: 90px 100px;
-    width: 90px;
+    width: 100px;
     display: inline-block;
     padding: 10px;
     background: url("../../public/images/content-background-transparent.png");
@@ -42,15 +16,13 @@
     color: white;
 }
 
-.facade-button{
-    margin-top: 190px;
-}
+
 
 
 @media screen and (max-width: 1000px){
     .facade-button{
-        width: 220px;
-        font-size: 2rem;
+        width: 180px;
+        font-size: 1.7rem;
         color: white;
     }
 }
@@ -58,6 +30,11 @@
 .facade-button:hover{
     color:rgb(205, 240, 240);
 }
+
+.facade-button:active{
+    color:rgb(43, 255, 0);
+}
+
 
 /*CONTENTS*/
 
@@ -85,6 +62,12 @@
 }
 
 .contents-button:hover{
+   
     color: rgb(72, 28, 102);  
+}
+
+.contents-button:active{
+    color: black;
+    background-color: rgb(105, 139, 160);
 }
 

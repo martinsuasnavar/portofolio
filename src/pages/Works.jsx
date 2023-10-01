@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Facade from '../components/boxes/Facade';
 import ContentButton from '../components/buttons/ContentButton';
 import Footer from '../components/boxes/Footer';
 import PropTypes from 'prop-types';
@@ -12,10 +13,12 @@ class Works extends Component {
                         
             </header>
 
+            <div><Facade h1Text="Martin Suasnavar" h2Text="my Works"/></div>
+
                     
             <div id="main_container">
                 <div id="contents">
-                    <h1 className="big-title-text">MY WORKS</h1>
+                    <h1 className="big-title-text">CREATING SOLUTIONS</h1>
                     <section>
             
                         <article className="article">

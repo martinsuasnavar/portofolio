@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Facade from '../components/boxes/Facade';
+import ContactForm from '../components/misc/ContactForm';
 import Footer from '../components/boxes/Footer';
 import PropTypes from 'prop-types';
 
@@ -11,10 +13,15 @@ class Contact extends Component {
                         
             </header>
 
+            <div><Facade h1Text="Martin Suasnavar" h2Text="contact Me"/></div>
+
                     
             <div id="main_container">
                 <div id="contents">
-                    <h1 className="big-title-text">CONTACT ME</h1>
+                    <h1 className="big-title-text"></h1>
+                    <section>
+                        <ContactForm />
+                    </section>
                 </div>
             </div>
             <footer><Footer /></footer>

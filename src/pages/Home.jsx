@@ -4,8 +4,7 @@ import Facade from '../components/boxes/Facade';
 import MyImage from '../components/misc/MyImage';
 import PropTypes from 'prop-types';
 import '../styles/main.css';
-import LinkedinButton from '../components/containers/linkedinbutton';
-import Cvdownloadbutton from '../components/containers/cvdownloadbutton';
+import ContentButton from '../components/buttons/ContentButton';
 //This is a page component
 
 class Home extends Component {
@@ -19,16 +18,21 @@ class Home extends Component {
             
             <div id="main_container">
       
-                <div><Facade/></div>
+                <div><Facade h1Text="Martin Suasnavar" h2Text="Freelance Front-end Developer"/></div>
 
                 <div id="contents">
+                
                     <section>
                         <h1 className="big-title-text">HELLO</h1>
-                    
+                        <br></br>
+                        <div className="flex-article"><MyImage src="/images/me.png" width="200px" alt="Developer logo"/>
                         <article className="article">
+                        
                             <h2 className="title-text">About me</h2>
+                           
                             I am a 21 years old IT engineering student who seeks opportunities to grow and learn. To start off my IT career, I have choosen Front-end development of websites, as one of my passions is designing visuals. I already have previous experience by self-learning with languages like C#, by modifying videogames in Unity, so I believe that's a good base to have the logics for what is the world of programming in its whole. I don't like overlooking details that are troublesome at my eyes, so I can be perfectionist at my work.
                         </article>
+                        </div>
                     </section>
                     <section>
                         <article className="article">
@@ -43,10 +47,10 @@ class Home extends Component {
                         </article>
                     </section>
                     
-                    <cv><MyImage src="/images/me.png" width="100px" alt="Developer logo"/></cv>
+                    
                     <div className="cv-buttons">
-                        <LinkedinButton></LinkedinButton>         
-                        <Cvdownloadbutton></Cvdownloadbutton>
+                        <ContentButton buttonText="CHECK MY LINKEDIN" pathTarget={"https://www.linkedin.com/in/mart%C3%ADn-suasnavar-579a4726a/"}/>         
+                        <ContentButton buttonText="DOWNLOAD MY CV" pathTarget={"#"}/>         
                     </div>
                 </div>
                 

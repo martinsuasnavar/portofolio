@@ -1,5 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState  } from 'react';
 import MyImage from '../misc/MyImage';
+import FacadeButton from '../buttons/FacadeButton';
+import './Facade.css';
 
 function fullOpacityAfterAnimation(selector, time){
     const box = document.querySelector(selector);
@@ -10,29 +12,42 @@ function fullOpacityAfterAnimation(selector, time){
     }, time);
 }
 
-const Facade = () => {
+
+
+const Facade = ({h1Text, h2Text}) => {
+    const [offset, setOffset] = useState(0);
+
+    const handleScroll = () => {
+      setOffset(window.pageYOffset);
+    };
+    
     useEffect(() => {
         fullOpacityAfterAnimation("#facade", 200);
         fullOpacityAfterAnimation(".facade-item", 1000);
-        fullOpacityAfterAnimation("#facade-about-me-button-placeholder", 1000);
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+   
     }, []);
 
   
         return (
     
-            <div id="facade" >
+            <div id="facade" style={{ backgroundPositionY: `${offset * -0.2}px` }}>
             
             <div className="facade-item">
-            <MyImage src="/images/logo.png" width="100px" alt="Developer logo"/>
-                <h1>Martin Suasnavar</h1>
+            <MyImage src="/images/logo.png" width="140px" alt="Developer logo"/>
+                <h1>{h1Text}</h1>
                 
-                <h2>Freelance Front-end Developer</h2>
+                <h2>{h2Text}</h2>
             </div>
             <aside>
                 <nav>      
                 </nav>
             </aside>
-            <div id="facade-about-me-button-placeholder"></div>
+            <FacadeButton className="facade-button" buttonText={"read Below"}/>
         
             <script src="script.js"></script>
         </div>

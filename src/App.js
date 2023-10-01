@@ -1,5 +1,4 @@
 import {  BrowserRouter, Route, Routes } from 'react-router-dom';
-import { AnimationProvider } from './AnimationContext';
 import Home from './pages/Home';
 import Works from './pages/Works';
 import Services from './pages/Services';
@@ -10,7 +9,6 @@ import NavigationBar from './components/containers/NavigationBar';
 
 const App = () => {
   return (
-    <AnimationProvider>
       <BrowserRouter>
       <NavigationBar/>
         <Routes>
@@ -20,7 +18,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
-    </AnimationProvider>
   );
 };
 
