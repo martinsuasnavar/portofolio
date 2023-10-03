@@ -32,7 +32,7 @@
 }
 
 .facade-button:active{
-    color:rgb(43, 255, 0);
+    opacity: 0.5;
 }
 
 
@@ -71,3 +71,26 @@
     background-color: rgb(105, 139, 160);
 }
 
+/* IMAGES */
+
+.image-button{
+    opacity: 0.5;
+}
+
+.image-button:hover{
+    animation: image-button-hover-effect 0.1s;
+    opacity: 1;
+}
+
+.image-button:active{
+    opacity: 0.1;
+}
+
+@keyframes image-button-hover-effect{
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

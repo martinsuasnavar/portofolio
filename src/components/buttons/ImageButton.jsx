@@ -1,9 +1,11 @@
 import MyImage from "../misc/MyImage";
+import '../../styles/buttons.css';
 
-const ImageButton = () => ({buttonImg, imgWidth, imgAlt, targetPath}) =>{
+const ImageButton = ({buttonImg, imgWidth, imgAlt, targetPath}) =>{
 return(
-        <MyImage src={buttonImg} widthidth={imgWidth} alt={imgAlt} href={targetPath} onClick={ButtonAction}>
-        </MyImage>
+    <a className="image-button" href={targetPath}>
+        <img src={buttonImg} width={imgWidth} alt={imgAlt}/>
+    </a>
     );
 }
 

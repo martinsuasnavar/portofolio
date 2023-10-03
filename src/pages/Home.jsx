@@ -23,9 +23,9 @@ class Home extends Component {
                 <div id="contents">
                 
                     <section>
-                        <h1 className="big-title-text">HELLO</h1>
-                        <br></br>
-                        <div className="flex-article"><MyImage src="/images/me.png" width="200px" alt="Developer logo"/>
+                        <h1 className="big-title-text">Hello</h1>
+                        
+                        <div className="flex-article"><MyImage src="/images/me.png" width="250px" height="250px" alt="Developer logo"/>
                         <article className="article">
                         
                             <h2 className="title-text">About me</h2>
@@ -49,7 +49,6 @@ class Home extends Component {
                     
                     
                     <div className="cv-buttons">
-                        <ContentButton buttonText="CHECK MY LINKEDIN" pathTarget={"https://www.linkedin.com/in/mart%C3%ADn-suasnavar-579a4726a/"}/>         
                         <ContentButton buttonText="DOWNLOAD MY CV" pathTarget={"#"}/>         
                     </div>
                 </div>

@@ -25,9 +25,16 @@
 
 }
 
+.facade-white-space{
+    margin-top: 140px;
+}
+
 .facade-item{
     font-size: 1.7rem;
     margin-top: 140px;
+}
+
+.facade-element-fade-in{
     animation: facadeItemFadeIn 1s;
 }
 

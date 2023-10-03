@@ -41,12 +41,13 @@ const Facade = ({h1Text, h2Text}) => {
             <MyImage src="/images/logo.png" width="140px" alt="Developer logo"/>
                 <h1>{h1Text}</h1>
                 
-                <h2>{h2Text}</h2>
+                <h2 className="facade-element-fade-in">{h2Text}</h2>
             </div>
             <aside>
                 <nav>      
                 </nav>
             </aside>
+            <div className="facade-white-space"></div>
             <FacadeButton className="facade-button" buttonText={"read Below"}/>
         
             <script src="script.js"></script>

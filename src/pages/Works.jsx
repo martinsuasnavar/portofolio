@@ -3,6 +3,7 @@ import Facade from '../components/boxes/Facade';
 import ContentButton from '../components/buttons/ContentButton';
 import Footer from '../components/boxes/Footer';
 import PropTypes from 'prop-types';
+import MyImage from '../components/misc/MyImage';
 
 
 class Works extends Component {
@@ -18,9 +19,8 @@ class Works extends Component {
                     
             <div id="main_container">
                 <div id="contents">
-                    <h1 className="big-title-text">CREATING SOLUTIONS</h1>
+                <MyImage src="images/github-logo.png" width="200px"></MyImage>
                     <section>
-            
                         <article className="article">
                             <h2 className="title-text">GitHub</h2>
                             You can check what I'm doing at the moment in my GitHub.

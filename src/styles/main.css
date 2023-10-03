@@ -1,7 +1,6 @@
 /*////*/
 /*CSS/*/
 /*////*/
-
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,8 +19,10 @@
 /*//*/
 
 :root{
+    
+    color-scheme: dark; 
     --footer-height: 100px;
-    --mobile-height: 1000px;
+    --article-margin-left: 40px;
 }
 
 
@@ -41,7 +42,7 @@
 
 
 #contents{
-    min-height: calc(90vh - var(--footer-height)); /*box height minus footer height*/
+    min-height: 100vh; /*box height minus footer height*/
     background: #cdcde7;
     color: rgb(38, 44, 41);
     padding-bottom: var(--footer-height); /*padding-bottom = footer-height*/
@@ -58,11 +59,49 @@
 /*classes*/
 /*///////*/
 
-.flex-article{
-    display: flex;
-    margin: 10px
+.big-title-text{
+    padding: 10px;
+    font-size: 5rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 450;
 }
 
+.title-text{
+    font-size: 2rem;
+}
+
+.article{
+    /*space between articles*/
+    margin-top: 0px; 
+    margin-bottom: 10px;
+    padding: 30px;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: var(--article-margin-left);
+}
+
+.flex-article{
+    display: flex;
+    
+    margin-left: calc(var(--article-margin-left) + 25px);
+}
+
+
+.article-image{
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    
+    border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 1000px){
+    .article-image{
+        width: 200px;
+    }
+}
 
 
 
@@ -95,40 +134,8 @@
 
 
 
-.big-title-text{
-    padding: 40px;
-    font-size: 4rem;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.title-text{
-    font-size: 1rem;
-}
 
-.article-image{
-    margin-top: 10px;
-    width: 100px;
-    height: auto;
-    
-    border-radius: 0.25rem;
-}
-
-@media screen and (max-width: 1000px){
-    .article-image{
-        width: 200px;
-    }
-}
-
-.article{
-    /*space between articles*/
-    margin-top: 0px; 
-    margin-bottom: 40px;
-    padding: 19px;
-    font-size: 1rem;
-    text-align: left;
-}
 
 /* style the container to use flexbox */
 .cv-buttons {
@@ -163,7 +170,7 @@ html, body{
     background: black;
 }
 
-cv{
+grayscale{
     filter: grayscale();
 }
 
@@ -173,3 +180,4 @@ cv{
         font-size: 1.5rem;
     }
 }
+

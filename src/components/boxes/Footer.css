@@ -18,7 +18,27 @@ footer{
    
 }
 
+.footer-white-space{
+    margin: 10px;
+}
+
 .footer-text{
     background-image: none;
-    margin: 90px;
 }
+
+.footer-sub-text{
+    font-size: 0.75rem;
+    background-image: none;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.footer-buttons-containter{
+    padding: 90px;
+    justify-content: center;
+}
+
+.footer-button{
+    margin: 20px;
+}
+
