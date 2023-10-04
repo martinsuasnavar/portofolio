@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Footer from '../components/boxes/Footer';
-import Facade from '../components/boxes/Facade';
-import MyImage from '../components/misc/MyImage';
+import { Facade, MyImage, WhiteSpace, ContentButton, Footer } from './shared';
 import PropTypes from 'prop-types';
-import '../styles/main.css';
-import ContentButton from '../components/buttons/ContentButton';
+import '../styles/main.css';;
 //This is a page component
 
 class Home extends Component {
@@ -24,7 +21,7 @@ class Home extends Component {
                 
                     <section>
                         <h1 className="big-title-text">Hello</h1>
-                        
+                        <br></br>
                         <div className="flex-article"><MyImage src="/images/me.png" width="250px" height="250px" alt="Developer logo"/>
                         <article className="article">
                         
@@ -42,8 +39,8 @@ class Home extends Component {
                     </section>
                     <section>
                         <article className="article">
-                            <h2 className="title-text">What am I planning to implement in my website?</h2>
-                            I want to incorporate more JavaScript functionality to my website, as well as adding purpose to certain buttons. I am also planning to incorporate the React.Js framework once I get used with JavaScript. An option to switch between Dark and Light themes also seems like a cool idea, being it done in JavaScript. A switcher between Spanish and English languages also seems solid.
+                            <h2 className="title-text">What do I think I achieve by creating this webstie?</h2>
+                            I adquiere more experience in what is the wonderful world of Front-end developing, specially with tools like the React.js library for JavaScript.
                         </article>
                     </section>
                     

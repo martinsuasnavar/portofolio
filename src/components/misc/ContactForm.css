@@ -1,3 +1,15 @@
 .contact-form{
     color-scheme: light; 
 }
+
+textarea{
+  width: 700px;
+  height: 200px;
+  resize: none;  
+};
+
+@media screen and (max-width: 1000px){
+  textarea{
+    width: 200px;
+  }
+}

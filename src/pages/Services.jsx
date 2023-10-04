@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import Facade from '../components/boxes/Facade';
-import Footer from '../components/boxes/Footer';
-import ContentButton from '../components/buttons/ContentButton';
-import WhiteSpace from '../components/misc/WhiteSpace';
-import MyImage from '../components/misc/MyImage';
-import PropTypes from 'prop-types';
+import { Facade, MyImage, WhiteSpace, ContentButton, Footer } from './shared';import PropTypes from 'prop-types';
 
 
 class Services extends Component {
@@ -20,10 +15,10 @@ class Services extends Component {
      
             <div id="main_container">
                 <div id="contents">
+                <div className="big-title-text">What services do I provide?</div>
                 <MyImage src="images/react-logo512.png" width="200px"></MyImage>
                 <section>
                     <article className="article">
-                        <div className="big-title-text">What services do I provide?</div>
                         <WhiteSpace height={"300px"} width={"300px"}/>
                         <h2 className="title-text">My core:</h2>
                         <li>Front-end solutions</li>
@@ -35,7 +30,7 @@ class Services extends Component {
                         <li>User Experience (UX)</li>
                         <br></br>
                         <h2 className="title-text">My customer needs:</h2>
-                        <li>Friendly UIs (User Interface)</li>
+                        <li>Friendly UIs (User Interfaces)</li>
                         <li>Usability</li>
                     </article>
                     <article className="article">

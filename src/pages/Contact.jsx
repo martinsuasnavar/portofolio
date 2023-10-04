@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Facade from '../components/boxes/Facade';
+import { Facade, MyImage, WhiteSpace, ContentButton, Footer } from './shared';
 import ContactForm from '../components/misc/ContactForm';
-import WhiteSpace from '../components/misc/WhiteSpace';
-import ContentButton from '../components/buttons/ContentButton';
-import Footer from '../components/boxes/Footer';
 import PropTypes from 'prop-types';
 
 
@@ -27,9 +24,12 @@ class Contact extends Component {
                         <div>Either contact me by filling the following appliaction form</div>
                         <br></br>
                         <ContactForm />
-                        <WhiteSpace width={"100"} height={"100"}/>
-                        <div>Or you can send me a message to my Linkedin</div>
-                        <WhiteSpace width={"100"} height={"100"}/>
+                        <WhiteSpace width={"10"} height={"10"}/>
+                        <div className="big-title-text">Or</div>
+                        <div>Send me a message to my LinkedIn</div>
+                        <WhiteSpace width={"50"} height={"50"}/>
+                        <MyImage src={"/images/linkedin-logo-black.png"} width={"100"}/>
+                        <WhiteSpace width={"10"} height={"10"}/>
                         <ContentButton buttonText={"MY LINKEDIN"} pathTarget={"https://www.linkedin.com/in/mart%C3%ADn-suasnavar-579a4726a/"}/>
                     </section>
                 </div>

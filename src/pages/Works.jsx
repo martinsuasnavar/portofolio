@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import Facade from '../components/boxes/Facade';
-import ContentButton from '../components/buttons/ContentButton';
-import Footer from '../components/boxes/Footer';
-import PropTypes from 'prop-types';
-import MyImage from '../components/misc/MyImage';
+import { Facade, MyImage, WhiteSpace, ContentButton, Footer } from './shared';import PropTypes from 'prop-types';
 
 
 class Works extends Component {
@@ -19,12 +15,14 @@ class Works extends Component {
                     
             <div id="main_container">
                 <div id="contents">
+                <div className="big-title-text">What am I up to?</div>
                 <MyImage src="images/github-logo.png" width="200px"></MyImage>
                     <section>
                         <article className="article">
                             <h2 className="title-text">GitHub</h2>
                             You can check what I'm doing at the moment in my GitHub.
                             <br></br>
+
                             <ContentButton  buttonText={"MY GITHUB"} pathTarget={"https://github.com/martinsuasnavar"} />
                         </article>
                     </section>
