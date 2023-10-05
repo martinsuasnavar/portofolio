@@ -16,24 +16,17 @@ class Services extends Component {
             <div id="main_container">
                 <div id="contents">
                 <div className="big-title-text">What services do I provide?</div>
-                <MyImage src="images/react-logo512.png" width="200px"></MyImage>
+                <MyImage src="images/briefcase-react-icon.png" width="200px"></MyImage>
                 <section>
-                    <article className="article">
+                    <article className="article-center">
                         <WhiteSpace height={"300px"} width={"300px"}/>
-                        <h2 className="title-text">My core:</h2>
-                        <li>Front-end solutions</li>
-                        <br></br>
-                        <h2 className="title-text">My tools:</h2>
-                        <li>React.js library for JavaScript</li>
-                        <br></br>
-                        <h2 className="title-text">My capabilities:</h2>
-                        <li>User Experience (UX)</li>
-                        <br></br>
-                        <h2 className="title-text">My customer needs:</h2>
-                        <li>Friendly UIs (User Interfaces)</li>
-                        <li>Usability</li>
+                        <h2 className="title-text">Front-end solutions:</h2>
+                        <li>Responsive web design</li>
+                        <li>User Interface (UI) design</li>
+                        <li>User Experience (UX) integration</li>
+                        <li>Use of React.js to create interfaces</li>
                     </article>
-                    <article className="article">
+                    <article className="article-center">
                         Any inquiere (methodologies, billings etc.) can be done by contacting me with a message.
                         
                     </article>

@@ -18,9 +18,7 @@ class Footer extends Component {
            
         </div>
         <div className="footer-white-space"></div>
-            <div className="footer-sub-text"> 
-                This project has been bootstrapped with React.js
-            </div>
+            
             
            </div>
         );

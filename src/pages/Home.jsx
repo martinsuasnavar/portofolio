@@ -22,7 +22,7 @@ class Home extends Component {
                     <section>
                         <h1 className="big-title-text">Hello</h1>
                         <br></br>
-                        <div className="flex-article"><MyImage src="/images/me.png" width="250px" height="250px" alt="Developer logo"/>
+                        <div className="article-flex"><MyImage src="/images/me.png" width="250px" height="250px" alt="Developer logo"/>
                         <article className="article">
                         
                             <h2 className="title-text">About me</h2>

@@ -18,7 +18,7 @@ class Works extends Component {
                 <div className="big-title-text">What am I up to?</div>
                 <MyImage src="images/github-logo.png" width="200px"></MyImage>
                     <section>
-                        <article className="article">
+                        <article className="article-center">
                             <h2 className="title-text">GitHub</h2>
                             You can check what I'm doing at the moment in my GitHub.
                             <br></br>

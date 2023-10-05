@@ -82,7 +82,16 @@
     margin-left: var(--article-margin-left);
 }
 
-.flex-article{
+.article-center{
+    /*space between articles*/
+    margin-top: 0px; 
+    margin-bottom: 10px;
+    padding: 30px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.article-flex{
     display: flex;
     
     margin-left: calc(var(--article-margin-left) + 25px);
