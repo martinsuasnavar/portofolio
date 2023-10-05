@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './NavigationBar.css';
 import { Link } from 'react-router-dom';
 import MyImage from '../misc/MyImage';
-import PropTypes from 'prop-types';
-
-const MyImage = ({src, width, height, alt}) => {
-    return <img src={src} width={width} height={height} alt={alt} />
-}
 
 const NavigationBar = () => {
     return (
@@ -18,11 +13,5 @@ const NavigationBar = () => {
         </div>
     );
 }
-
-
-NavigationBar.propTypes = {
-
-};
-
 
 export default NavigationBar;
