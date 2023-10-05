@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './NavigationBar.css';
+import './NavigatorBar.css';
 import { Link } from 'react-router-dom';
 import MyImage from '../misc/MyImage';
 
-const NavigationBar = () => {
+const NavigatorBar = () => {
     return (
         <div className="navigator">
             <Link className="navigator-button" to="/"><MyImage src="/images/logo.png" width="20px" alt="Developer logo"/></Link>
@@ -14,4 +14,4 @@ const NavigationBar = () => {
     );
 }
 
-export default NavigationBar;
+export default NavigatorBar;

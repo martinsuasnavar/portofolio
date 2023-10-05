@@ -3,15 +3,15 @@ import {  BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, Works, Services, Contact } from './pages';
 
 //misc
-//import NavigationBar from './components/containers/NavigationBar.jsx';
-
+import NavigatorBar from './components/containers/NavigatorBar';
 
 //IMPORTANT: make sure react-router-dom has been installed in node-modules folder, or else a runtime error is going to be cause since the library is not found
 
 const App = () => {
   return (
     
-      <BrowserRouter>>
+      <BrowserRouter>
+      <NavigatorBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
