@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 import MyImage from '../misc/MyImage';
 import PropTypes from 'prop-types';
 
+const MyImage = ({src, width, height, alt}) => {
+    return <img src={src} width={width} height={height} alt={alt} />
+}
 
-class NavigationBar extends Component {
-    render() {
-        return (
-            <div className="navigator">
-                <Link className="navigator-button" to="/"><MyImage src="/images/logo.png" width="20px" alt="Developer logo"/></Link>
-                <Link className="navigator-button" to="/works">my Works</Link>
-                <Link className="navigator-button" to="/services">my Services</Link>
-                <Link className="navigator-button" to="/contact">contact Me</Link>
-            </div>
-        );
-    }
+const NavigationBar = () => {
+    return (
+        <div className="navigator">
+            <Link className="navigator-button" to="/"><MyImage src="/images/logo.png" width="20px" alt="Developer logo"/></Link>
+            <Link className="navigator-button" to="/works">my Works</Link>
+            <Link className="navigator-button" to="/services">my Services</Link>
+            <Link className="navigator-button" to="/contact">contact Me</Link>
+        </div>
+    );
 }
 
 
